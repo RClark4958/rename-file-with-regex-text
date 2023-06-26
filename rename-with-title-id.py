@@ -39,6 +39,8 @@ for dir_name in os.listdir(main_dir_path):
                     name, ext = os.path.splitext(filename)
                     # Create a new filename using the Title ID and the extension
                     new_filename = f'{title_id}{ext}'
-                    # Rename the file
-                    os.rename(os.path.join(dir_path, filename),
-                              os.path.join(dir_path, new_filename))
+                    # Check if the new file name already exists
+                    if not os.path.exists(os.path.join(dir_path, new_filename)):
+                        # Rename the file
+                        os.rename(os.path.join(dir_path, filename),
+                                  os.path.join(dir_path, new_filename))
