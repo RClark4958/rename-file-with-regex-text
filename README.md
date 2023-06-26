@@ -1,1 +1,2 @@
 # rename-file-with-regex-text
+### This script will search in a directory for a .nfo file. It will search the .nfo file for a certain match using regex. It will take the match and then replace the name of a specific file type in the same directory.
