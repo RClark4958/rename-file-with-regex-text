@@ -6,7 +6,7 @@ import re
 main_dir_path = r"D:"
 
 # Pattern for the title ID in the .nfo file
-pattern = re.compile(r'Title ID\s:\s([^\s]+)')
+pattern = re.compile(r'(0100[^\s]*)')
 
 # Iterate over each subdirectory in the main directory
 for dir_name in os.listdir(main_dir_path):
