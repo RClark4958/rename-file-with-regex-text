@@ -10,6 +10,9 @@ def get_string_from_nfo(folder_path):
 
     Returns:
         str or None: Desired string that starts with '0100' or None if not found.
+
+    Use Case: replacing nsp and xci filenames with the title id found in the .nfo file.
+    
     """
     # Loop through all files in the folder
     for filename in os.listdir(folder_path):
